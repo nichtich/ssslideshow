@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slide {
+    position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+    overflow: hidden; /* FIXME */
+}
+
+#title {
+    position: absolute; bottom: 2%; right: 2%;
+    z-index: 1;
+
+    text-color: #333;
+    font-weight: bold;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+
+    background: rgba(100%,100%,100%,0.5);
+
+    /* font size relative to viewpoint width and height */
+    font-size: 5vw;
+    padding: 0.1vw 1vw;
+    border-radius: 1vw;
+
+    /* FIXME: text is right alligned so overflow to the left */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
